@@ -2,6 +2,10 @@
 
 # Authentication in Ember
 
+This training will involve a lot of following code and and exploring the
+Chrome Inspector and utilizing Ember Inspector.  It is recommended that you
+comment code or take notes.
+
 ## Prerequisites
 
 -   [ga-wdi-boston/ember-resources](https://github.com/ga-wdi-boston/ember-resources)
@@ -19,46 +23,34 @@ By the end of this, developers should be able to:
 1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Install dependencies with `npm install` and `bower install`.
-1.  Follow the instructions to setup the [API]().
+1.  Follow the instructions to setup the [lister-api](https://github.com/ga-wdi-boston/listr-api).
 1.  Start the font-end server with `ember server --proxy http://localhost:3000`.
 
-## Ember Services
+## From end to end
 
-## Demo: Write a Demo
+Watch as I sign up for a new account on our demo app.
 
-Demos are demonstrations, and developers should give their full attention to
-them. It's a great time for them to take notes about important concepts before
-applying them in an exercise.
+*Aside from flashy messages on the page did anything change in the Chrome Dev*
+*Tools?*
 
-Demos correspond to the "I do" portion of scaffolding from consultant trainging.
+Take some time and sign in on your own, and check to see if anything in the
+Chrome Dev Tools has changed.
 
-## Exercise: Write an Exercise
+Now that we have added a key tool to our personal developer toolkit lets look
+at how it is implimented and the rest of the code.
 
-During exercises, developers should apply concepts covered in the previous demo.
-This is their first chance to generalize concepts introduced. Exercises should
-be very focused, and flow natural into a lab.
+## Follow Along
 
-Exercises correspond to the "We do" portion of scaffolding from consultant
-trainging.
+As a class let's walk through file by file what is happening. I will ask
+developers to guide me through the files while correcting any misunderstandings.
 
-## Lab: Write a Lab
+First let's start down the template and component trail, then we'll work our way
+up with actions.
 
-During labs, developers get to demonstrate their understanding of concepts from
-demos and applied knowledge from exercises. Labs are an opportunity for
-developers to build confidence, and also serve as a diagnostic tool for
-consultants to evaluate developer understanding.
+*Remember: Data down, actions up.*
 
-Labs should be timed explicitly using a timer. When estimating the time it will
-take to complete a lab, it is better to overestimate. During labs, consultants
-should circle the room and interact with developers, noting patterns and
-prompting with hints on how to complete the lab. If developers end early, a
-consultant may stop the lab timer. If developers do not finish in time, a
-consultant may give more time at her discretion based on current talk pace, the
-current estimate for the talk, and the importance of completing the lab while
-consultant support is available.
-
-Labs correspond to the "You do" portion of scaffolding from consultant
-trainging.
+While going up the Ember hierarchy we may need to stop a some point to discuss
+services.
 
 ## Additional Resources
 
