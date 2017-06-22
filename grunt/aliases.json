@@ -7,7 +7,9 @@
     "shell:git-push-master",
     "shell:deploy-prepare",
     "shell:deploy-dist",
-    "shell:deploy-publish"
+    "shell:deploy-publish",
+    "shell:clean-gh-pages",
+    "shell:return-to-master"
   ],
   "reformat": ["jscs:write"]
 }
