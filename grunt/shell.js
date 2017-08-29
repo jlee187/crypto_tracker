@@ -17,30 +17,34 @@ module.exports = {
   'git-checkout-master': {
     command: 'git checkout master'
   },
-  'deploy-prepare': {
-    command: [
-      'git branch -D gh-pages || echo "so not removed"',
-      'git checkout --orphan gh-pages',
-      'git rm --cached \'*\'',
-      'ember build --environment=production'
-    ].join(' && ')
+  'deploy-prepare1': {
+    command: 'git branch -D gh-pages || echo "so not removed"'
   },
-  'deploy-dist': {
-    command: [
-    'git add --force dist/',
-    'git commit -m "deploy task"'
-  ].join(' && ')
+  'deploy-prepare2': {
+    command: 'git checkout --orphan gh-pages'
   },
-  'deploy-publish': {
-    command: [
-     'git push origin :gh-pages || echo "so not removed"',
-     'git subtree push --prefix dist origin gh-pages',
-   ].join(' && ')
- },
- 'clean-gh-pages': {
-   command: 'git clean -x -d --force --exclude=node_modules --exclude=bower_components'
- },
- 'return-to-master': {
-   command: 'git checkout master'
- },
+  'deploy-prepare3': {
+    command: 'git rm --cached \'*\''
+  },
+  'deploy-prepare4': {
+    command: 'ember build --environment=production'
+  },
+  'deploy-dist1': {
+    command: 'git add --force dist/'
+  },
+  'deploy-dist2': {
+    command: 'git commit -m "deploy task"'
+  },
+  'deploy-publish1': {
+    command: 'git push origin :gh-pages || echo "so not removed"'
+  },
+  'deploy-publish2': {
+    command: 'git subtree push --prefix dist origin gh-pages'
+  },
+  'clean-gh-pages': {
+    command: 'git clean -x -d --force --exclude=node_modules --exclude=bower_components'
+  },
+  'return-to-master': {
+    command: 'git checkout master'
+  }
 }
