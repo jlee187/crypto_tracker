@@ -13,8 +13,6 @@
     "shell:deploy-dist2",
     "shell:deploy-publish1",
     "shell:deploy-publish2",
-    "shell:deploy-dist",
-    "shell:deploy-publish",
     "shell:clean-gh-pages",
     "shell:return-to-master"
   ],
