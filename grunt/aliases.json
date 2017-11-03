@@ -1,5 +1,20 @@
 {
   "default": ["nag"],
   "nag": ["jshint", "jsonlint:all", "jscs:status"],
+  "deploy": [
+    "shell:git-is-clean",
+    "shell:git-checkout-master",
+    "shell:git-push-master",
+    "shell:deploy-prepare1",
+    "shell:deploy-prepare2",
+    "shell:deploy-prepare3",
+    "shell:deploy-prepare4",
+    "shell:deploy-dist1",
+    "shell:deploy-dist2",
+    "shell:deploy-publish1",
+    "shell:deploy-publish2",
+    "shell:clean-gh-pages",
+    "shell:return-to-master"
+  ],
   "reformat": ["jscs:write"]
 }
