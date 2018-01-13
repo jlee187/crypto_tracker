@@ -10,6 +10,8 @@ Router.map(function () {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
+  this.route('cryptos');
+  this.route('crypto', { path: '/cryptos/:crypto_id'} );
 });
 
 export default Router;

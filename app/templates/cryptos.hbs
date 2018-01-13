@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Crystopia</h2>
+  {{#link-to "index"}} Go home {{/link-to}}
+
+  {{crypto-form}}
+
+  {{#each model as |crypto|}}
+    <h3>{{#link-to "crypto" crypto}} {{crypto.name}} {{/link-to}}</h3>
+    {{!-- {{crypto-list crypto=crypto}} --}}
+    {{!-- <h3>{{#link-to "crypto" crypto}} {{crypto.title}} {{/link-to}}</h3> --}}
+  {{/each}}
+</div>
