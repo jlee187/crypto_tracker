@@ -2,11 +2,17 @@
   <h2>Crystopia</h2>
   {{#link-to "index"}} Go home {{/link-to}}
 
-  {{crypto-form}}
+  {{crypto-form createCrypto='createCrypto'}}
 
   {{#each model as |crypto|}}
     <h3>{{#link-to "crypto" crypto}} {{crypto.name}} {{/link-to}}</h3>
+    {{!-- <h3>{{crypto.quantity}}</h3> --}}
     {{!-- {{crypto-list crypto=crypto}} --}}
-    {{!-- <h3>{{#link-to "crypto" crypto}} {{crypto.title}} {{/link-to}}</h3> --}}
+    {{!-- <h3>{{#link-to "crypto" crypto}} {{crypto.name}} {{/link-to}}</h3> --}}
+
+  {{!-- // <script type="text/javascript" src = "https://widgets.cryptocompare.com/serve/v1/coin/multi?fsyms={{crypto.name}}&tsyms=USD,EUR,CNY,GBP"> --}}
+  {{!-- </script> --}}
+
   {{/each}}
+
 </div>
