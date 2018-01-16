@@ -1,6 +1,6 @@
 {{!-- This returned the actual name <h1>{{model.name}}</h1> --}}
 {{#link-to "cryptos"}} Go back to your cryptos {{/link-to}}
-{{crypto-list crypto=model}}
+{{crypto-list crypto=model updateCrypto='updateCrypto'}}
 <h1>Name: {{model.name}}</h1>
 <h1>Units Owned: {{model.quantity}}</h1>
 

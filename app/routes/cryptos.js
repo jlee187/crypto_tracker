@@ -9,5 +9,8 @@ export default Ember.Route.extend({
       let newCrypto = this.get('store').createRecord('crypto', crypto);
       newCrypto.save();
     },
+      deleteCrypto(crypto) {
+        crypto.destroyRecord();
+    }
   }
 });
