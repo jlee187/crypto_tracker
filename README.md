@@ -1,74 +1,31 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+Purpose: As a new, novice, or experienced crypto trader, tracking price trends and assets under book are amongst the most common trading techniques. This application aims to be your quick reference for tracking your asset book. With advanced user authentication logic layered on top of crypto-asset graphs, you have a trusted repository of instantaneous crypto analyses at your fingertips!
 
-# Authentication in Ember
+Instruction: Simply, sign in, add a crypto, and click into the asset you added and a dynamic chart will fulfill your every need.
 
-This training will involve a lot of following code and and exploring the
-Chrome Inspector and utilizing Ember Inspector.  It is recommended that you
-comment code or take notes.
+Planning/ Process/ Problem Solving:
+As the fourth and final project at General Assembly, we were given a week to complete a full stack application of our choosing. With these extra days, I focused more time than usual on planning out appropriately and as accurately as possible key milestones and goals. Fortunately, this planning process was too conservative and all endpoints were hit significantly earlier than anticipated allowing me the time to develop a sister-app which is based on the EVM. My process and problem solving were really in-line with accepted best practices: 1) rubber ducking; researching of the issue; escalating any issues not resolved to my superiors.
 
-## Prerequisites
+App Snapshot:
+<img src="https://i.imgur.com/bzEnrwK.png" alt="App Example">
 
--   [Ember Resources](https://github.com/ga-wdi-boston/ember-resources)
+Wireframes:
+https://imgur.com/sd4I85p
 
-## Objectives
+User Stories:
+As a user, I can sign up/ sign in/ change password/ sign out
+As a user, I can add, update, see, and delete assets from my personal application
+As a user, I can see a chart rendered for a given asset
 
-By the end of this, developers should be able to:
+Improvements on next release:
+Better widget handling, Additional metrics rendered, net value
 
--   Implement token authentication in an Ember application.
--   Enforce authentication in protected routes.
+List of Technologies Used:
+Ember, Ruby on Rails, CSS, HTML
 
-## Preparation
+Github Repos:
+Front-end: https://github.com/jlee187/crypto_tracker
+Back-End:  https://github.com/jlee187/crypto_tracker_rails
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-    this repository.
-1.  Install dependencies with `npm install` and `bower install`.
-1.  Start any API based on a recent version of the [Rails API
-    Template](https://github.com/ga-wdi-boston/rails-api-template) or the
-    [Express API
-    Template](https://github.com/ga-wdi-boston/express-api-template).
-1.  Start the front-end server with `ember server`.
-
-## From end to end
-
-Watch as I sign up for a new account on our demo app.
-
-*Other than the flash messages on the page, did anything change?  What about in
-the Chrome Developer Tools?*
-
-Take some time and sign in on your own, and check to see if anything in the
-Chrome Dev Tools has changed.
-
-Now that we have added a key tool to our personal developer toolkit lets look
-at how it's implemented.
-
-## Follow Along
-
-Let's walk through file by file to see what's happening.  I will ask
-developers to guide me through the files while correcting any misunderstandings.
-
-First let's start down the template and component trail, then we'll work our way
-up with actions.
-
-*Remember: Data down, actions up.*
-
-While going up the Ember hierarchy we may need to stop a some point to discuss
-services.
-
-## Additional Resources
-
--   [Implementing Authentication with Ember Services - Ember
-    Igniter](http://emberigniter.com/implementing-authentication-with-ember-services/)
--   [jpadilla/ember-simple-auth-token: Ember Simple Auth extension that is
-    compatible with token-based authentication like
-    JWT.](https://github.com/jpadilla/ember-simple-auth-token)
--   [simplabs/ember-simple-auth: A library for implementing
-    authentication/authorization in Ember.js
-    applications.](https://github.com/simplabs/ember-simple-auth)
--   [Create your first Ember 2.0 app: From authentication to calling an
-    API](https://auth0.com/blog/2015/08/11/create-your-first-ember-2-dot-0-app-from-authentication-to-calling-an-api/)
-
-## [License](LICENSE)
-
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+Deployed Sites:
+Front-End: https://jlee187.github.io/crypto_tracker/
+Back-End: https://fathomless-garden-49624.herokuapp.com/
