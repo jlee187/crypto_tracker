@@ -1,10 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  classNameBindings: ['chartActive'],
+  chartActive: true,
   model (params) {
     return this.get('store').findRecord('crypto', params.crypto_id);
   },
+
   actions:{
+    toggleChart() {
+      this.toggleProperty('chartActive');
+    },
     updateCrypto (crypto) {
       crypto.save()
       .then(() => this.transitionTo('cryptos'))
@@ -13,7 +19,7 @@ export default Ember.Route.extend({
         this.get('flashMessages')
         .danger('There was a problem. Please try again.');
       });
-    },
-  }
+    }
 
+  }
 });
