@@ -6,7 +6,7 @@ Planning/ Process/ Problem Solving:
 As the fourth and final project at General Assembly, we were given a week to complete a full stack application of our choosing. With these extra days, I focused more time than usual on planning out appropriately and as accurately as possible key milestones and goals. Fortunately, this planning process was too conservative and all endpoints were hit significantly earlier than anticipated allowing me the time to develop a sister-app which is based on the EVM. My process and problem solving were really in-line with accepted best practices: 1) rubber ducking; researching of the issue; escalating any issues not resolved to my superiors.
 
 App Snapshot:
-<img src="https://i.imgur.com/bzEnrwK.png" alt="App Example">
+<img src="https://i.imgur.com/pt0Svu1.png" alt="App Example">
 
 Wireframes:
 https://imgur.com/sd4I85p
