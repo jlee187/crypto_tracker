@@ -7,10 +7,22 @@ export default Ember.Route.extend({
   actions: {
     createCrypto(crypto) {
       let newCrypto = this.get('store').createRecord('crypto', crypto);
-      newCrypto.save();
+      newCrypto.save()
+      .then(() => this.transitionTo('cryptos'))
+      .then(() => this.get('flashMessages').success('New Crypto Added!'))
+      .catch(() => {
+        this.get('flashMessages')
+        .danger('There was a problem. Please try again.');
+      });
     },
       deleteCrypto(crypto) {
-        crypto.destroyRecord();
+        crypto.destroyRecord()
+        .then(() => this.transitionTo('cryptos'))
+        .then(() => this.get('flashMessages').success('Crypto Deleted!'))
+        .catch(() => {
+          this.get('flashMessages')
+          .danger('There was a problem. Please try again.');
+        });
     }
   }
 });
